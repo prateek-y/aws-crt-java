@@ -21,6 +21,7 @@ val cmakeConfigure = tasks.register("cmakeConfigure") {
         "-DCMAKE_INSTALL_PREFIX=${buildDir}/cmake-build",
         "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
         "-DBUILD_DEPS=ON",
+        "-DCMAKE_BUILD_TYPE=Debug",
         "-DBUILD_TESTING=OFF"
     )
 
